@@ -1,0 +1,11 @@
+<template name="001d7e7e">
+  <view class="_view data-v-fe44c9c2 content">
+    <view class="_view data-v-fe44c9c2">
+      <image class="_image data-v-fe44c9c2 uni-media-list-logo" src="{{imgage}}" style="width: 90%;height: 400px;"></image>
+    </view>
+    <view class="_view data-v-fe44c9c2 title">{{title}}</view>
+    <view class="_view data-v-fe44c9c2 art-content">
+      <rich-text class="_rich-text data-v-fe44c9c2 richText" nodes="{{strings}}"></rich-text>
+    </view>
+  </view>
+</template>
