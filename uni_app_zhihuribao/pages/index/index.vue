@@ -1,16 +1,17 @@
 <template>
 	<view class="content">
 		<view class="uni-list">
-			
+			<!--这是图片轮播的-->
 			 <swiper :indicator-dots="true"  :autoplay="true" :interval="3000" :duration="500">
-            <swiper-item v-for="item in top_stories " :key="item" @tap="openinfo"
-			 :data-newsid="item.id">
+				<swiper-item v-for="item in top_stories " :key="item" @tap="openinfo" :data-newsid="item.id">
 				<image :src="item.images" style="width: 100%;"></image>
-            </swiper-item>
+				</swiper-item>
 			</swiper>
-			
+			<text>今日热闻</text>
+			<!--这是列表信息-->
 			<view class="uni-list-cell" hover-class="uni-list-cell-hover" v-for="(item,index) in list" :key="index" @tap="openinfo"
 			 :data-newsid="item.id">
+		
 				<view class="uni-media-list">
 					<image class="uni-media-list-logo" :src="item.images"></image>
 					<view class="uni-media-list-body">

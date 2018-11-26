@@ -24,6 +24,7 @@
 				data: {},
 				success: res => {
 					this.title=res.data.title;
+					// 替换中文双引号
 					this.strings=res.data.body.replace("type=“text/javascript”",'type="text/javascript"');
 					this.imgage=res.data.image;
 				},
